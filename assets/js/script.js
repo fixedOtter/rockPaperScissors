@@ -12,6 +12,7 @@ while (userPlays) {
   while (!inputCriteria) {
     /* prompt user for input */
     userInput = prompt(`Please pick: rock, paper, or scissors:`);
+    inputCriteria = true;
 
     /* make user input only string */
     userInput = userInput.replace(/[^a-zA-Z ]/g, '');
@@ -20,15 +21,13 @@ while (userPlays) {
     /* checks userInput and sets to int for comparison */
     if (userInput == `rock`) {
       userInput = 0;
-      inputCriteria = true;
     } else if (userInput == `paper`) {
       userInput = 1;
-      inputCriteria = true;
     } else if (userInput == `scissors`) {
       userInput = 2;
-      inputCriteria = true;
     } else {
       alert(`Invalid input please try again! :)`);
+      inputCriteria = false;
     }
   }
 

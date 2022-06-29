@@ -73,4 +73,12 @@ while (userPlays) {
 
 
 
+/* this is a more slick way JD was showing we could do */
 
+function rps() {
+  let choices = ['r', 'p', 's,'];
+  let userChoice = prompt('yet');
+  let winningConditions = ['pr', 'sp', 'rs'];
+  let computerChoice = Math.floor(Math.random() * choices.length);
+  let combination = userChoice.concat(computerChoice);
+}
